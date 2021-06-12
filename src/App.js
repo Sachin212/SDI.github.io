@@ -14,10 +14,10 @@ function App(){
     return(
         <Router>
             <Container>
+                <Route exact path='/' component={Admin} />
                 <Route exact path = '/home' component={SurveyForm} />
                 <Route exact path='/join' component={Join} />
                 <Route exact path='/submitted' component={Submitted} />
-                <Route exact path='/' component={Admin} />
                 <Route exact path='/userdata' component={UserData} />
             </Container>
         </Router>
